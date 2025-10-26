@@ -19,6 +19,7 @@
     "mainnet:bot-orchestrate": "ts-node src/botOrchestrator.ts",
     "mainnet:reannounce-controller": "ts-node src/reannounceController.ts",
     "mainnet:verify-bots": "ts-node src/verifyBotBalances.ts",
+    "scan:token-program": "ts-node src/fetchAllTokenProgramAccounts.ts",
     "audit": "node run-audit.js",
     "audit:contracts": "node comprehensive-omega-audit.js",
     "audit:github": "node github-account-scanner.js",
