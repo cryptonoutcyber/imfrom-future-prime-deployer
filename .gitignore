@@ -26,6 +26,26 @@ secrets/
 keypair*.json
 *-keypair.json
 user_auth*.json
+.cache/user_auth.json
+.cache/mint.json
+.cache/genenout-state.json
+.cache/evolution-log.json
+
+# API Keys and Tokens
+*api-key*
+*api_key*
+*apikey*
+*.token
+token.txt
+
+# Wallet files
+wallet.json
+*wallet*.json
+*.wallet
+
+# Private deployment configs
+contract_addresses.json
+deployment-log.json
 
 # IDE and editor files
 .vscode/
