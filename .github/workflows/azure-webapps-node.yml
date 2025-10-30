@@ -43,6 +43,12 @@ jobs:
         cache: 'npm'
 
     - name: npm install, build, and test
+      env:
+        HELIUS_API_KEY: ${{ secrets.HELIUS_API_KEY }}
+        QUICKNODE_RPC: ${{ secrets.QUICKNODE_RPC }}
+        RPC_URL: ${{ secrets.RPC_URL }}
+        TREASURY_PUBKEY: ${{ secrets.TREASURY_PUBKEY }}
+        RELAYER_PUBKEY: ${{ secrets.RELAYER_PUBKEY }}
       run: |
         npm install
         npm run build --if-present

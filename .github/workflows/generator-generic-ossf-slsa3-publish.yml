@@ -31,6 +31,12 @@ jobs:
       #
       # ========================================================
       - name: Build artifacts
+        env:
+          HELIUS_API_KEY: ${{ secrets.HELIUS_API_KEY }}
+          QUICKNODE_RPC: ${{ secrets.QUICKNODE_RPC }}
+          RPC_URL: ${{ secrets.RPC_URL }}
+          TREASURY_PUBKEY: ${{ secrets.TREASURY_PUBKEY }}
+          RELAYER_PUBKEY: ${{ secrets.RELAYER_PUBKEY }}
         run: |
             # These are some amazing artifacts.
             echo "artifact1" > artifact1
